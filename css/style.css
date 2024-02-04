@@ -1,0 +1,147 @@
+
+.body{
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+/*=============================NavBar=========================================*/
+.navbar-nav .nav-item .nav-link{
+    position:relative;
+    color: #fff;
+    padding-left: 0 !important;
+    padding-right: 30px !important;
+}
+.navbar-nav .nav-item .nav-link::before{
+    content: '';
+    position: absolute;
+    top:100%;
+    left:0;
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    transition: width 0.5s ease-in;
+}
+.navbar-nav .nav-item .nav-link.nav-link.active::before{
+    width: 40px;
+}
+.nav-link::before:hover{
+    width: 40px;
+}
+.title{
+    position: relative;
+    margin-bottom: 3rem;
+}
+.title::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 20px);
+    left:50%;
+    transform:translateX(-50%);
+    height: 4px;
+    width: 40px;
+    background-color: #0078ff;
+ }
+ 
+
+
+/*=============================Home=====================================*/
+#home{
+    background-image: url("../img/intro-bg.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+/*==============================about====================================*/
+.progress{
+    height: .7rem;
+    margin: .5rem 0 1.2rem 0;
+}
+.progress-bar{
+    background-color: #0078ff;
+}
+.title-box{
+    position: relative;
+    margin-bottom: 3rem;
+}
+.title-box::after{
+   content: '';
+   position: absolute;
+   top: calc(100% + 10px);
+   left:0%;
+   height: 4px;
+   width: 70px;
+   background-color: #0078ff;
+   
+}
+/*=================================services========================================*/
+.icon-circle{
+    border:10px solid #0078ff
+}
+.card-div i{
+    transition:all 0.5s;
+}
+.card-div i:hover{
+    color: white;
+    background-color: #0078ff;
+    border: 10px solid #cde1f8;
+}
+.counter{
+    background: url("../img/counters-bg.jpg") center fixed  no-repeat;
+    background-size: cover;
+   
+}
+
+.services .counter .layer {
+    background-color: rgba(0, 120, 255,0.7);
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+ }
+.counter-num span{
+    font-size: 2rem;
+}
+.counter-icon i{
+    border: 10px solid #cde1f8;
+}
+
+
+/*===================================Portfolio==========================================*/
+#work .card img{
+    filter: grayscale(100%);
+   transition: all 0.5s;
+}
+#work .card:hover img {
+    filter: grayscale(0%);
+    transform:scale(1.2);
+}
+.portfolio-slider{
+    background: url("../img/overlay-bg.jpg") center fixed no-repeat;
+    background-size: cover;
+}
+.portfolio-slider .portfolio-layer{
+    background-color: rgba(0, 120, 255,0.7);
+    min-height: 80vh;
+}
+/*==================================BLOG===============================================*/
+.card .box {
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+/*=============================Contact===============================================*/
+#contact{
+    background: url("../img/overlay-bg.jpg") center fixed no-repeat;
+    background-size:cover;
+}
+.contact-layer{
+    background-color: rgba(0, 120, 255,0.7);
+    
+}
+.social i:hover{
+ color: white;
+ border:8px solid #cde1f8;
+ background-color: #0078ff;
+}
